@@ -15,22 +15,26 @@ cout << "Welcome to C++ Library Programming" << endl;
 
 void weatherForecast(int ndays)
 {
-	if(ndays < 1 || ndays > 3)
+	if(ndays < 0 || ndays > 3)
 	{
-		cout << "Error: Incorrect number of days entered.";
+		cout << "Error: Incorrect number of days entered."<< endl;
 	}
 	else
 	{
-		for(int i=0; i<ndays; i++)
+		for(int i=0; i<(ndays+1); i++)
 		{
-			int r= rand() % 10;
-			cout << "\nWeather for day: " << (i+1)
-			<< "\nHighest Temperature: " << r << " deg C"
-			<< "\nLowest Temperature: " << r << " deg C"
-			<< "\nPredicted Rianfall: " << r << " mm"
-			<< "\nWindspeed: " << r << " kph"
-			<< "\nWind-direction: E"
-			<< endl;
+			int r;
+			cout << "\nWeather for day: " << i;
+			r = rand() % 50;
+			cout << "\nHighest Temperature: " << r << " deg C";
+			r = rand() % 50;
+			cout << "\nLowest Temperature: " << r << " deg C";
+			r = rand() % 50;
+			cout << "\nPredicted Rianfall: " << r << " mm";
+			r = rand() % 50;
+			cout << "\nWindspeed: " << r << " kph";
+			cout << "\nWind-direction: E";
+			cout << endl;
 		}
 	}
 }
