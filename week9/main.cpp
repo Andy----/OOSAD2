@@ -4,6 +4,10 @@ using namespace std;
 int main()
 {
 printGreeting();
-weatherForecast(3);
+
+int numDays;
+cout << "Enter the number of days: " << endl;
+cin >> numDays;
+weatherForecast(numDays);
 return 0;
 }
