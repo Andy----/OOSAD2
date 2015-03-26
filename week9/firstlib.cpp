@@ -26,9 +26,9 @@ void weatherForecast(int ndays)
 			int r;
 			cout << "\nWeather for day: " << i;
 			r = rand() % 50;
-			cout << "\nHighest Temperature: " << r << " deg C";
+			cout << "\nHighest Temperature: " << r << "° C";
 			r = rand() % 50;
-			cout << "\nLowest Temperature: " << r << " deg C";
+			cout << "\nLowest Temperature: " << r << "° C";
 			r = rand() % 50;
 			cout << "\nPredicted Rianfall: " << r << " mm";
 			r = rand() % 50;
@@ -36,6 +36,12 @@ void weatherForecast(int ndays)
 			cout << "\nWind-direction: E";
 			cout << endl;
 		}
+		cout << endl;
 	}
+}
+
+void getMyLocation(std::string &str)
+{
+	str = "Dublin";
 }
 
