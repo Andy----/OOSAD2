@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: Institute of Technology Tallaght
+License Type: Academic
+-->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="ormtest.Employee" table="employee" lazy="false">
+		<id name="id" column="id" type="integer" unsaved-value="0">
+			<generator class="identity">
+			</generator>
+		</id>
+		<property name="name" column="name" type="string" length="100" not-null="false" lazy="false"/>
+		<property name="address" column="address" type="string" length="100" not-null="false" lazy="false"/>
+		<property name="pps" column="pps" type="string" length="10" not-null="false" lazy="false"/>
+		<property name="mobile" column="mobile" type="string" length="15" not-null="false" lazy="false"/>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Database>
+  <Setting type="32">
+    <Driver></Driver>
+    <DriverFiles></DriverFiles>
+    <Dialect></Dialect>
+    <DriverClass></DriverClass>
+    <URL></URL>
+    <UserName></UserName>
+    <Password></Password>
+    <HostName></HostName>
+    <PortNO></PortNO>
+    <DBName></DBName>
+    <ServiceName></ServiceName>
+    <ServerName></ServerName>
+    <SelectedForm>true</SelectedForm>
+  </Setting>
+  <Setting type="2">
+    <Driver>MySQL5 (Connector/J Driver)</Driver>
+    <DriverFiles>/usr/share/java/mysql-connector-java-5.1.28.jar</DriverFiles>
+    <Dialect>org.hibernate.dialect.MySQL5Dialect</Dialect>
+    <DriverClass>com.mysql.jdbc.Driver</DriverClass>
+    <URL>jdbc:mysql://localhost/test</URL>
+    <UserName>root</UserName>
+    <Password>root</Password>
+    <HostName>localhost</HostName>
+    <PortNO></PortNO>
+    <DBName>test</DBName>
+    <ServiceName></ServiceName>
+    <ServerName></ServerName>
+    <SelectedForm>true</SelectedForm>
+  </Setting>
+</Database>
