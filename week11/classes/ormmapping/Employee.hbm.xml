@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: Institute of Technology Tallaght
+License Type: Academic
+-->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="Employee" table="Employee" lazy="false">
+		<id name="ID" column="ID" type="integer" unsaved-value="0">
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="PPS" column="PPS" type="string" length="255" not-null="false" lazy="false"/>
+		<property name="name" column="Name" type="string" length="255" not-null="false" lazy="false"/>
+		<property name="address" column="Address" type="string" length="255" not-null="false" lazy="false"/>
+		<property name="yearsService" column="YearsService" type="integer" length="11" not-null="true" lazy="false"/>
+		<property name="age" column="Age" type="integer" length="11" not-null="true" lazy="false"/>
+		<property name="mobile" column="Mobile" type="string" length="255" not-null="false" lazy="false"/>
+	</class>
+</hibernate-mapping>
